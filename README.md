@@ -12,7 +12,9 @@ npm run build && npm run serve
 
 ## Create a Event
 `curl -X POST localhost:3000/events \`
+
 `-d 'name=order_creted' \`
+
 `-d 'status=completed'`
 
 
