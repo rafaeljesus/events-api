@@ -10,13 +10,8 @@ To start the serve execute:
 npm run build && npm run serve
 ```
 
-## Create a Event
-`curl -X POST localhost:3000/events \`
-
-`-d 'name=order_creted' \`
-
-`-d 'status=completed'`
-
+## Search Events
+`curl -X GET localhost:3000/?name=order_creted&status=completed&page=1&pageSize=20`
 
 ## Built with
 - [nodejs](https://https://nodejs.org) Backend is a node-v.5.7.1.
