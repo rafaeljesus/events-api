@@ -1,0 +1,7 @@
+node_modules/
+public/
+build/
+npm-debug.log
+coverage/
+tags
+**/*.swp
