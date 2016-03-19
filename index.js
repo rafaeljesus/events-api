@@ -1,6 +1,6 @@
 import micro, {send, sendError} from 'micro'
 import {parse} from 'url'
-import Event from '@rafaeljesus/events-model'
+import Event from '@rafaeljesus/events-core'
 
 export default micro(async function (req, res) {
   try {
@@ -13,7 +13,7 @@ export default micro(async function (req, res) {
   }
 })
 
-export async function search (req) {
+async function search (req) {
   const query = parse(req.url, true).query
   return await Event.search(query)
 }

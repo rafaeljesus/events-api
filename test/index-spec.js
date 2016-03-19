@@ -1,7 +1,7 @@
 import test from 'ava'
 import 'babel-register'
 import request from 'request-promise'
-import Event from '@rafaeljesus/events-model'
+import Event from '@rafaeljesus/events-core'
 
 import listen from './listen'
 import fixture from './fixture'
