@@ -1,5 +1,5 @@
 {
-  "name": "event-track",
+  "name": "events-api",
   "version": "1.0.0",
   "description": "The public Events API",
   "scripts": {
@@ -11,6 +11,10 @@
   },
   "author": "Rafael Jesus <rafaelljesus86@gmail.com> (http://github.com/rafaeljesus)",
   "license": "MIT",
+  "repository" :{
+    "type" : "git",
+    "url" : "http://github.com/rafaeljesus/events-api.git"
+  },
   "pre-commit": [
     "test"
   ],
