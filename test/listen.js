@@ -1,6 +1,6 @@
 import srv from '../'
 
-export default async function () {
+export default async () => {
   return new Promise((resolve, reject) => {
     srv.listen((err) => {
       if (err) return reject(err)

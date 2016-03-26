@@ -8,15 +8,15 @@ import fixture from './fixture'
 
 let data = fixture()
 
-test.beforeEach(async function () {
+test.beforeEach(async () => {
   await Event.create(data)
 })
 
-test.afterEach(async function () {
+test.afterEach(async () => {
   await Event.remove()
 })
 
-test('GET /events', async function (t) {
+test('GET /events', async (t) => {
   try {
     const url = await listen()
     const body = await request({

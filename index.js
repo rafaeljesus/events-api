@@ -2,7 +2,7 @@ import micro, {send, sendError} from 'micro'
 import {parse} from 'url'
 import Event from '@rafaeljesus/events-core'
 
-export default micro(async function (req, res) {
+export default micro(async (req, res) => {
   try {
     if (req.method !== 'GET') {
       return send(res, 405, 'Invalid method')
