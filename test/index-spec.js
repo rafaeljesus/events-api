@@ -1,5 +1,4 @@
 import test from 'ava'
-import 'babel-register'
 import request from 'request-promise'
 import Event from '@rafaeljesus/events-core'
 
@@ -8,13 +7,13 @@ import fixture from './fixture'
 
 let data = fixture()
 
-test.beforeEach(async () => {
+test.beforeEach(async () =>
   await Event.create(data)
-})
+)
 
-test.afterEach(async () => {
+test.afterEach(async () =>
   await Event.remove()
-})
+)
 
 test('GET /events', async (t) => {
   try {
