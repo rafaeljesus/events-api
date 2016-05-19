@@ -1,11 +1,11 @@
-FROM node:argon
+FROM node:6
 
 RUN mkdir -p /events-api
 
 WORKDIR /events-api
 
 COPY package.json /events-api/
-RUN npm install
+RUN npm i
 COPY . /events-api
 
 EXPOSE 3000
