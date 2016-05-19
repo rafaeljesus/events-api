@@ -2,7 +2,7 @@ import test from 'ava'
 import request from 'request-promise'
 import Event from '@rafaeljesus/events-core'
 
-import listen from './listen'
+import '../server'
 import fixture from './fixture'
 
 let data = fixture()
@@ -17,9 +17,8 @@ test.afterEach(async () =>
 
 test('GET /events', async (t) => {
   try {
-    const url = await listen()
     const body = await request({
-      uri: url,
+      uri: 'http://localhost:3000',
       method: 'GET',
       json: true
     })
