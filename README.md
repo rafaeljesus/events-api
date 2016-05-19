@@ -24,12 +24,12 @@ This repository has automated image builds on hub.docker.com.
 Use [docker-mongodb](https://github.com/rafaeljesus/docker-mongodb) and run command described there
 
 Finally run:
-``
+```
 $ docker-machine start default
 $ eval $(docker-machine env default)
 $ docker run -it -e "NODE_ENV=development" -v "$(pwd)":/data --link mongo:mongo -w /data -p 3000:3000 rafaeljesus/events-api
 $ curl `docker-machine ip default`:3000
-``
+```
 
 ## Search Events
 `curl -X GET localhost:3000/?name=order_creted&status=completed&page=1&pageSize=20`
