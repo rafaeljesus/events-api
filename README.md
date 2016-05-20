@@ -14,7 +14,7 @@
 ## Running server
 To start the serve execute:
 ```bash
-npm run start
+npm start
 ```
 
 ## Docker
