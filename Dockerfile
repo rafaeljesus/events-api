@@ -1,12 +1,13 @@
 FROM node:6
 
-RUN mkdir -p /events-api
+RUN mkdir -p /usr/src/events-api
 
-WORKDIR /events-api
+WORKDIR /usr/src/events-api
 
-COPY package.json /events-api/
-RUN npm i
-COPY . /events-api
+COPY package.json /usr/src/events-api/
+RUN npm install
+
+COPY . /usr/src/events-api/
 
 EXPOSE 3000
 
