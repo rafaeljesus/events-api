@@ -14,8 +14,7 @@
     "type": "git",
     "url": "http://github.com/rafaeljesus/events-api.git"
   },
-  "pre-commit": [
-  ],
+  "pre-commit": [],
   "standard": {
     "parser": "babel-eslint"
   },
