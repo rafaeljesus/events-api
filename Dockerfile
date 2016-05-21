@@ -1,4 +1,4 @@
-FROM node:6
+FROM mhart/alpine-node:6
 
 RUN mkdir -p /usr/src/events-api
 
