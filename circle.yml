@@ -1,0 +1,13 @@
+machine:
+  node:
+    version: 6
+  services:
+    - docker
+deployment:
+  master:
+    branch: master
+    commands:
+      - docker build -t rafaeljesus/events-api .
+      - docker login -e $DOCKERHUB_EMAIL -u $DOCKERHUB_USER -p $DOCKERHUB_PASS
+      - docker tag rafaeljesus/events-api rafaeljesus/events-api:master
+      - docker push rafaeljesus/events-api:master
