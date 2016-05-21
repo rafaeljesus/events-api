@@ -1,4 +1,4 @@
-import micro, { send, sendError } from 'micro'
+import micro, { send } from 'micro'
 import { parse } from 'url'
 import { wrap, log } from '@rafaeljesus/events-util'
 import Event from '@rafaeljesus/events-core'
