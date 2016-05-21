@@ -15,7 +15,6 @@
     "url": "http://github.com/rafaeljesus/events-api.git"
   },
   "pre-commit": [
-    "test"
   ],
   "standard": {
     "parser": "babel-eslint"
@@ -39,11 +38,11 @@
   },
   "dependencies": {
     "@rafaeljesus/events-core": "latest",
-    "micro": "2.0.0"
+    "micro": "^2.1.0"
   },
   "devDependencies": {
-    "ava": "^0.13.0",
-    "babel-eslint": "^5.0.0",
+    "ava": "^0.14.0",
+    "babel-eslint": "^6.0.4",
     "babel-plugin-syntax-async-functions": "^6.8.0",
     "babel-plugin-transform-async-to-generator": "^6.8.0",
     "babel-plugin-transform-runtime": "^6.9.0",
@@ -52,9 +51,9 @@
     "babel-register": "^6.9.0",
     "nyc": "^6.4.4",
     "pre-commit": "^1.1.2",
-    "request-promise": "^2.0.1",
-    "snazzy": "^3.0.0",
-    "standard": "^6.0.7"
+    "request-promise": "^3.0.0",
+    "snazzy": "^4.0.0",
+    "standard": "^7.1.0"
   },
   "engines": {
     "node": ">=4.4.0"
