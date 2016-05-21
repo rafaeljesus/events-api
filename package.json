@@ -37,6 +37,7 @@
   },
   "dependencies": {
     "@rafaeljesus/events-core": "latest",
+    "@rafaeljesus/events-util": "latest",
     "micro": "2.0.0",
     "winston": "^2.2.0"
   },
