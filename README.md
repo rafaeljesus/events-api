@@ -1,6 +1,6 @@
 ## Events API
 
-[ ![Codeship Status for rafaeljesus/events-api](https://codeship.com/projects/66ffe6d0-cf94-0133-1f1c-52aba3b897dd/status?branch=master)](https://codeship.com/projects/141289)
+[![CircleCI](https://circleci.com/gh/rafaeljesus/events-api/tree/master.svg?style=svg)](https://circleci.com/gh/rafaeljesus/events-api/tree/master)
 [![Docker Image Pulls](https://img.shields.io/docker/pulls/rafaeljesus/events-api.svg)](https://hub.docker.com/r/rafaeljesus/events-api/)
 [![bitHound Overall Score](https://www.bithound.io/github/rafaeljesus/events-api/badges/score.svg)](https://www.bithound.io/github/rafaeljesus/events-api)
 [![bitHound Dependencies](https://www.bithound.io/github/rafaeljesus/events-api/badges/dependencies.svg)](https://www.bithound.io/github/rafaeljesus/events-api/master/dependencies/npm)
