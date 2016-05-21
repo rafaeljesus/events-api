@@ -37,7 +37,8 @@
   },
   "dependencies": {
     "@rafaeljesus/events-core": "latest",
-    "micro": "2.0.0"
+    "micro": "2.0.0",
+    "winston": "^2.2.0"
   },
   "devDependencies": {
     "ava": "^0.14.0",
