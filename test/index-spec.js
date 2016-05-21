@@ -16,16 +16,12 @@ test.afterEach(async () =>
 )
 
 test('GET /events', async (t) => {
-  try {
-    const body = await request({
-      uri: 'http://localhost:3000',
-      method: 'GET',
-      json: true
-    })
-    t.is(body.total, 1)
-    t.is(body.result.length, 1)
-    t.same(body.result[0].status, data.status)
-  } catch (err) {
-    t.false(err)
-  }
+  const body = await request({
+    uri: 'http://localhost:3000',
+    method: 'GET',
+    json: true
+  })
+  t.is(body.total, 1)
+  t.is(body.result.length, 1)
+  t.deepEqual(body.result[0].status, data.status)
 })
