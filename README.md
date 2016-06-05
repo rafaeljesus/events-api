@@ -19,7 +19,7 @@ To start the serve execute:
 npm start
 ```
 
-### search
+### API
 ```bash
 curl -X GET 'http://localhost:3000/v1/events/?name=order_received&status=error&page=2&page_size=25'
 ```
