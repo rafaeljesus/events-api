@@ -10,11 +10,18 @@
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/rafaeljesus/events-api)
 
 * The public Events API
+* A minimal docker alpine container
+* Automatically pushes it to dockerhub if tests pass
 
 ## Running server
 To start the serve execute:
 ```bash
 npm start
+```
+
+### search
+```bash
+curl -X GET 'http://localhost:3000/v1/events/?name=order_received&status=error&page=2&page_size=25'
 ```
 
 ## Docker
@@ -27,9 +34,6 @@ $ eval $(docker-machine env default)
 $ docker-compose up
 $ curl `docker-machine ip default`:3000
 ```
-
-## Search Events
-`curl -X GET localhost:3000/?name=order_creted&status=completed&page=1&pageSize=20`
 
 ## Built with
 - [nodejs](https://https://nodejs.org) Backend is a node.js.
